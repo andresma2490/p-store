@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap);
+
+body {
+  font-family: 'poppins', sans-serif;
+  background: #fafafa;
+}
+
+$navbar-height: 3.5rem;
+$footer-height: 1.5rem;
+
+.h-navbar {
+  height: $navbar-height;
+}
+
+.h-footer {
+  height: $footer-height;
+}
+
+.p-content {
+  padding-top: calc($navbar-height + 1rem);
+  padding-bottom: calc($footer-height + 1rem);
+}

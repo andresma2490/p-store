@@ -1,0 +1,90 @@
+<div class="accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button
+        class="accordion-button text-dark bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+        Categories
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse show"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <ul class="p-0" style="list-style-type: none">
+          <li>
+            <a href="#" class="text-capitalize text-decoration-none text-dark"
+              >all</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-capitalize text-decoration-none text-dark"
+              >electronics</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-capitalize text-decoration-none text-dark"
+              >jewelery</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-capitalize text-decoration-none text-dark"
+              >men's clothing</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-capitalize text-decoration-none text-dark"
+              >women's clothin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button
+        class="accordion-button text-dark bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsePrice"
+        aria-expanded="true"
+        aria-controls="collapsePrice"
+      >
+        Price
+      </button>
+    </h2>
+    <div
+      id="collapsePrice"
+      class="accordion-collapse collapse show"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <div class="d-flex gap-2">
+          <div>
+            <p class="mb-0">Min</p>
+
+            <input type="number" class="form-control form-control-sm" />
+            <label class="form-label" for="typeNumber">$0</label>
+          </div>
+          <div>
+            <p class="mb-0">Max</p>
+            <input type="number" class="form-control form-control-sm" />
+            <label class="form-label" for="typeNumber">$10,000</label>
+          </div>
+        </div>
+        <button type="button" class="btn btn-light w-100">apply</button>
+      </div>
+    </div>
+  </div>
+</div>

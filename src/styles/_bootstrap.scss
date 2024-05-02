@@ -1,2 +1,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons';
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
