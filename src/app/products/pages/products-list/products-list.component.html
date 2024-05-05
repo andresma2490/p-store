@@ -1,10 +1,12 @@
-<div class="row">
+<div *ngIf="productList$ | async as productList" class="row">
   <div class="d-none d-md-block col-md-4 col-lg-3">
     <div class="sticky-top p-content">
       <app-products-filter />
     </div>
   </div>
   <div class="col-12 col-md-8 col-lg-9 d-grid-products p-content gap-3">
-    <app-product-card *ngFor="let i of [].constructor(5)" />
+    <ng-container *ngFor="let product of productList">
+      <app-product-card [product]="product" />
+    </ng-container>
   </div>
 </div>

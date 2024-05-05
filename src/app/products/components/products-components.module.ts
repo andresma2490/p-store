@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductImgComponent } from './product-img/product-img.component';
 import { ProductsCarouselComponent } from './products-carousel/products-carousel.component';
 import { ProductsFilterComponent } from './products-filter/products-filter.component';
 
@@ -10,7 +11,8 @@ import { ProductsFilterComponent } from './products-filter/products-filter.compo
   declarations: [
     ProductCardComponent,
     ProductsCarouselComponent,
-    ProductsFilterComponent
+    ProductsFilterComponent,
+    ProductImgComponent
   ],
   imports: [CommonModule, RouterModule],
   exports: [
