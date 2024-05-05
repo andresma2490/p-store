@@ -5,3 +5,31 @@
   outline: none !important;
   box-shadow: none !important;
 }
+
+.text-bg-white {
+  color: #000 !important;
+  background-color: white;
+}
+
+[data-bs-theme="light"] {
+  --bs-body-bg: #fafafa;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #252525;
+
+  .text-bg-dark {
+    color: #000 !important;
+    background-color: RGBA(248, 249, 250, var(--bs-bg-opacity, 1)) !important;
+  }
+
+  .text-bg-light {
+    color: #fff !important;
+    background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+  }
+
+  .text-bg-white {
+    color: #fff !important;
+    background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+  }
+}

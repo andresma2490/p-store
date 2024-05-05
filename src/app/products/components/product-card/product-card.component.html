@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card text-bg-white">
   <a class="text-decoration-none" [routerLink]="['/products', product.id]">
     <img
       class="object-fit-contain card-img-top"
@@ -8,15 +8,15 @@
     />
   </a>
   <div class="card-body lh-sm">
-    <a class="text-decoration-none" [routerLink]="['/products', product.id]">
-      <h5 class="card-text text-dark"> {{ product.price|currency }}  </h5>
+    <a class="text-decoration-none text-bg-white" [routerLink]="['/products', product.id]">
+      <h5 class="card-text"> {{ product.price|currency }}  </h5>
     </a>
-    <h6 class="card-title text-secondary" style="font-weight: 400">
+    <h6 class="card-title" style="font-weight: 400">
       {{ product.title }}
     </h6>
   </div>
-  <div class="card-footer text-center bg-transparent border-0 mb-2">
-    <a href="#" class="text-decoration-none text-dark w-100 mt-auto"
+  <div class="card-footer text-bg-white text-center border-0 pb-3">
+    <a href="#" class="text-decoration-none text-bg-white w-100 mt-auto"
       ><i class="bi bi-cart2"></i> Add to cart</a
     >
   </div>
