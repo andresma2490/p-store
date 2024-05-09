@@ -21,28 +21,19 @@
       <div class="accordion-body">
         <ul class="p-0" style="list-style-type: none">
           <li>
-            <a href="#" class="text-capitalize text-decoration-none text-bg-white"
+            <a
+              class="text-capitalize text-decoration-none text-bg-white"
+              role="button"
+              (click)="categorySelected.emit(null)"
               >all</a
             >
           </li>
-          <li>
-            <a href="#" class="text-capitalize text-decoration-none text-bg-white"
-              >electronics</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-capitalize text-decoration-none text-bg-white"
-              >jewelery</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-capitalize text-decoration-none text-bg-white"
-              >men's clothing</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-capitalize text-decoration-none text-bg-white"
-              >women's clothin</a
+          <li *ngFor="let category of categories">
+            <a
+              class="text-capitalize text-decoration-none text-bg-white"
+              role="button"
+              (click)="categorySelected.emit(category)"
+              >{{ category.name }}</a
             >
           </li>
         </ul>
@@ -83,7 +74,9 @@
             <label class="form-label" for="typeNumber">$10,000</label>
           </div>
         </div>
-        <button type="button" class="btn border text-bg-light w-100">apply</button>
+        <button type="button" class="btn border text-bg-light w-100">
+          apply
+        </button>
       </div>
     </div>
   </div>
