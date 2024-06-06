@@ -19,3 +19,8 @@ $footer-height: 1.5rem;
   padding-top: calc($navbar-height + 1rem);
   padding-bottom: calc($footer-height + 1rem);
 }
+
+.ng-touched.ng-invalid:is(input, textarea), .ng-touched.ng-invalid.ng-dirty:is(input, textarea) {
+  border-color: red;
+  @extend .is-invalid; /** from bootstrap */
+}

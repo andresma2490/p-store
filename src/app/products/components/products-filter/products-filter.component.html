@@ -19,7 +19,7 @@
       data-bs-parent="#accordionExample"
     >
       <div class="accordion-body">
-        <ul class="p-0" style="list-style-type: none">
+        <ul class="categories-list p-0">
           <li>
             <a
               class="text-capitalize text-decoration-none text-bg-white"
@@ -60,21 +60,36 @@
       aria-labelledby="headingOne"
       data-bs-parent="#accordionExample"
     >
-      <div class="accordion-body">
+      <div class="accordion-body" [formGroup]="priceForm">
         <div class="d-flex gap-2">
           <div>
             <p class="mb-0">Min</p>
 
-            <input type="number" class="form-control form-control-sm" />
+            <input
+              formControlName="minPrice"
+              type="number"
+              class="form-control form-control-sm"
+            />
             <label class="form-label" for="typeNumber">$0</label>
           </div>
           <div>
             <p class="mb-0">Max</p>
-            <input type="number" class="form-control form-control-sm" />
+            <input
+              formControlName="maxPrice"
+              type="number"
+              class="form-control form-control-sm"
+            />
             <label class="form-label" for="typeNumber">$10,000</label>
           </div>
         </div>
-        <button type="button" class="btn border text-bg-light w-100">
+        <div *ngIf="priceForm.errors && priceForm.errors['priceRangeInvalid']" class="text-danger">
+          Min Price must be less than Max Price.
+        </div>
+        <button
+          type="button"
+          class="btn border text-bg-light w-100"
+          (click)="emitPrices()"
+        >
           apply
         </button>
       </div>

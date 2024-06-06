@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { ProductCardComponent } from './product-card/product-card.component';
@@ -14,7 +15,7 @@ import { ProductsFilterComponent } from './products-filter/products-filter.compo
     ProductsFilterComponent,
     ProductImgComponent
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule],
   exports: [
     ProductCardComponent,
     ProductsCarouselComponent,
